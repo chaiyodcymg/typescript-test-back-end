@@ -12,5 +12,5 @@ export const getClockAngle = (hh_mm: string): number => {
     const result: number =  hourhand > minutehand ? hourhand - minutehand : minutehand - hourhand 
     return result > 180 ? Math.abs(360 - result) : result
 }
- console.log(getClockAngle("00:00"));
+
  
