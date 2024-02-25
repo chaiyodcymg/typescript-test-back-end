@@ -1,9 +1,9 @@
 {
   "name": "typescript-test-back-end",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "start:1": "npx tsc && node dist/src/getClockAngle.js",
+    "start:2": "npx tsc && node dist/src/getQuestionPart.js",
     "test": "npx tsc && jest"
   },
   "keywords": [],
