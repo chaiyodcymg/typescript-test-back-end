@@ -4,6 +4,7 @@
   "scripts": {
     "start:1": "npx tsc && node dist/src/getClockAngle.js",
     "start:2": "npx tsc && node dist/src/getQuestionPart.js",
+    "start:3": "npx tsc && node dist/src/quickestPath.js",
     "test": "npx tsc && jest"
   },
   "keywords": [],
