@@ -3,3 +3,4 @@
 1. getClockAngle.ts
 2. File getQuestionPart.ts is Question 2
 3. File quickestPath.ts is question 3
+4. File minEnergy.ts is question 4.
