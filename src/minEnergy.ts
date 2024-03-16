@@ -81,5 +81,5 @@ const FindStationClosestValueByTarget = (target: number, stations: number[], use
         }
         
     });
-    return { value: station , index: indexResult }
+    return { value: station , index: indexResult };
 }

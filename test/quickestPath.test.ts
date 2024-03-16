@@ -29,20 +29,20 @@ describe("quickestPath function", () => {
     ];
 
     test(`quickestPath should be matched cases ladders and snakes are default`, () => {
-        const result: number[] = quickestPath({ladders: laddersDefault , snakes: snakesDefault})
-        const findResult = casesDefault.some((value) => JSON.stringify(value) == JSON.stringify(result))
-        expect(findResult).toEqual(true)
+        const result: number[] = quickestPath({ladders: laddersDefault , snakes: snakesDefault});
+        const findResult = casesDefault.some((value) => JSON.stringify(value) == JSON.stringify(result));
+        expect(findResult).toEqual(true);
     })
 
     test(`quickestPath should be matched cases ladders and snakes are not sort`, () => {
-        const result: number[] = quickestPath({ladders: laddersNotSort , snakes: snakesNotSort})
-        const findResult = casesDefault.some((value) => JSON.stringify(value) == JSON.stringify(result))
-        expect(findResult).toEqual(true)
+        const result: number[] = quickestPath({ladders: laddersNotSort , snakes: snakesNotSort});
+        const findResult = casesDefault.some((value) => JSON.stringify(value) == JSON.stringify(result));
+        expect(findResult).toEqual(true);
     })
 
     test(`quickestPath should be matched cases ladders and snakes are other boards`, () => {
-        const result: number[] = quickestPath({ladders: laddersOtherBoard , snakes: snakesOtherBoard})
-        const findResult = casesOtherBoard.some((value) => JSON.stringify(value) == JSON.stringify(result))
-        expect(findResult).toEqual(true)
+        const result: number[] = quickestPath({ladders: laddersOtherBoard , snakes: snakesOtherBoard});
+        const findResult = casesOtherBoard.some((value) => JSON.stringify(value) == JSON.stringify(result));
+        expect(findResult).toEqual(true);
     })
 });

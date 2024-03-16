@@ -60,7 +60,7 @@ describe("minEnergy function", () => {
             target: 11,
             expected: 7
         },
-    ]
+    ];
 
     test(`minEnergy should be matched cases`, () => {
         const expectedCount: number = cases.length;

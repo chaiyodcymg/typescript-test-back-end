@@ -19,7 +19,7 @@ describe("getQuestionPart function", () => {
     ];
 
     test.each(cases)(`getQuestionPart should be matched cases`, ({ phrases , expected}) => {
-        const result: string[] = getQuestionPart(phrases)
+        const result: string[] = getQuestionPart(phrases);
         expect(result).toEqual(expected);
     })
 
