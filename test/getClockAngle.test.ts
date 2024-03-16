@@ -36,7 +36,7 @@ describe("getClockAngle function", () => {
         }
     ];
 
-    test.each(cases)(`getClockAngle(%s) should be %s`, ({ hh_mm , expected}) => {
+    test.each(cases)(`getClockAngle should be matched cases`, ({ hh_mm , expected}) => {
         const result = getClockAngle(hh_mm)
         expect(result).toEqual(expected);
     })

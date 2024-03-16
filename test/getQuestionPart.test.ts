@@ -18,7 +18,7 @@ describe("getQuestionPart function", () => {
         }
     ];
 
-    test.each(cases)(`getQuestionPart(%s) should be %s`, ({ phrases , expected}) => {
+    test.each(cases)(`getQuestionPart should be matched cases`, ({ phrases , expected}) => {
         const result: string[] = getQuestionPart(phrases)
         expect(result).toEqual(expected);
     })

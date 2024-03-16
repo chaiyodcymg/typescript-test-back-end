@@ -2,19 +2,20 @@
   "name": "typescript-test-back-end",
   "version": "1.0.0",
   "scripts": {
-    "start:1": "npx tsc && node dist/src/getClockAngle.js",
-    "start:2": "npx tsc && node dist/src/getQuestionPart.js",
-    "start:3": "npx tsc && node dist/src/quickestPath.js",
-    "test": "npx tsc && jest"
+    "build": "npx tsc",
+    "test": "npm run build && jest",
+    "test:1": "npm run build && jest test/getClockAngle",
+    "test:2": "npm run build && jest test/getQuestionPart",
+    "test:3": "npm run build && jest test/quickestPath",
+    "test:4": "npm run build && jest test/minEnergy"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "chaiyodcymg",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.11.20",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.2",
     "typescript": "^5.3.3"
